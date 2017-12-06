@@ -33,7 +33,7 @@ app.get('/', function(req, res){
 
 /* GET home page. */
 app.get('/', function(req, res) {
-    res.send('Rokris REST-API');
+    res.send('Tores REST-API');
 });
 
 
