@@ -25,9 +25,17 @@ mongoose.connection.once('open', function() {
 });
 
 // define a simple route
+/*
 app.get('/', function(req, res){
     res.json({"message": "Velkommen til Rokris-Notes RestAPI."});
 });
+*/
+
+/* GET home page. */
+app.get('/', function(req, res) {
+    res.render('index', { title: 'Rokris REST-API' });
+});
+
 
 // Require Notes routes
 require('./app/routes/note.routes.js')(app);
