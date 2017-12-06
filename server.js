@@ -17,7 +17,7 @@ mongoose.connect(dbConfig.url, { useMongoClient: true });
 
 mongoose.connection.on('error', function() {
     console.log('Could not connect to the database. Exiting now...');
-    process.exit();
+    //process.exit();
 });
 mongoose.connection.once('open', function() {
     console.log("Successfully connected to the database");
