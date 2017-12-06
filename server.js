@@ -26,7 +26,7 @@ mongoose.connection.once('open', function() {
 
 // define a simple route
 app.get('/', function(req, res){
-    res.json({"message": "Velkommen til RokrisNotes RestAPI."});
+    res.json({"message": "Velkommen til Rokris-Notes RestAPI."});
 });
 
 // Require Notes routes
